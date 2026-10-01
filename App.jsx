@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { ShoppingCart, Search, User, Star, Plus, Minus, Trash2, X, CheckCircle } from 'lucide-react';
-import { productsData, categories } from './data/products';
+import { ShoppingCart, Search, Star, Plus, Minus, Trash2, X, CheckCircle } from 'lucide-react';
+import { productsData, categories } from './products';
 
 export default function App() {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -101,7 +101,7 @@ export default function App() {
 
       {/* Hero Banner */}
       <div
-        className="relative h-[440px] bg-cover bg-center flex flex-col justify-end p-8 md:p-14 text-white"
+        className="relative h-[400px] bg-cover bg-center flex flex-col justify-end p-8 md:p-14 text-white"
         style={{
           backgroundImage: "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.75)), url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1600&q=80')"
         }}
@@ -114,9 +114,6 @@ export default function App() {
             Shop Smart. <br /> Buy with Confidence.
           </h1>
         </div>
-        <h2 className="text-5xl md:text-8xl font-black tracking-widest text-white/20 uppercase select-none pointer-events-none">
-          Our Products
-        </h2>
       </div>
 
       {/* Category Pills */}
